@@ -1,0 +1,483 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Vollkorn&display=swap');
+*{margin: 0; padding: 0;}
+body
+{
+	background:  #003333;
+}
+
+
+
+#header-wrapper
+{
+	width: 100%;
+	background-color: #009999;
+	border-bottom:  5px solid #003333;
+}
+
+#header
+{
+	width: 960px; 
+	background-color: #009999;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+#header img
+{
+	width: 75px;
+	float: left;
+	margin-left: -10px;
+	padding: 0px 7px;
+	border-right: 2px solid #003333;
+	margin-right: 10px;
+}
+
+#header h1
+{
+	color: #ffffff;
+	text-shadow: 3px 3px 3px black;
+	-o-font-family: 'Bangers', cursive;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 3px;
+	padding: 2px;
+}
+
+#header p
+{
+	color:  #001a1a;
+	font-family: 'Cabin Sketch', cursive;
+	padding-left: 2px;
+}
+
+#slider-wrapper
+{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 5;
+}
+
+#nav-wrapper
+{
+	width: 100%;
+	border-bottom:  5px solid #003333;
+	background-color: #e6ffff;
+}
+.stick {
+	position:fixed;
+	top:0px;
+	z-index:999999999999;
+}
+
+
+
+#nav
+{
+	height: 38px;
+	width: 960px;
+	margin:0 auto;
+	font-family: 'Roboto', sans-serif;
+	z-index: 10
+}
+
+#nav ul
+{
+	background-color: #e6ffff;
+	z-index: 10
+}
+
+#nav ul li
+{
+	list-style: none;
+	float: left;
+	border-right: 1px solid #003333;
+	position: relative;
+}
+
+
+#nav ul li:last-child
+{
+	border-right: none;
+}
+
+ #nav ul li a
+ {
+ 	text-decoration:none;
+ 	display: block;
+ 	padding: 10px 20px;
+ 	color: #003333;
+ }
+
+ #nav ul li a:hover
+ {
+ 	background-color: #003333;
+ 	color: #e6ffff;
+ 	transition: 0.3s;
+ }
+
+ #nav ul li ul
+ {
+ 	position: absolute;
+ 	left: -99999px
+ }
+
+ #nav ul li:hover ul
+ {
+ 	left: 0
+ }
+
+ #nav ul li ul li
+ {
+ 	width: 200px;
+ 	border: none;
+ 	border-bottom: 1px solid #003333;
+
+ }
+
+ #nav ul li ul li:last-child
+ {
+ 	border-bottom: none;
+ }
+
+ #cover
+ {
+ 	width: 960px;
+ 	margin: 0 auto;
+ }
+
+ #cover img
+ {
+ 	width: 960px;
+ 	border: 10px solid #000000;
+ }
+
+ #content_wrapper
+ {
+ 	width: 100%;
+ 	background-color: #e6ffff;
+ 	border-top: 5px solid #003333;
+ 	overflow: hidden;
+ }
+
+#content
+{
+	width: 960px;
+	margin: 0 auto;
+	display: block;
+	background-color: black;
+	border-left: 1px solid #003333;
+	border-right: 1px solid #003333;
+}
+
+#maincontent
+{
+	width: 720px;
+	margin-right: 20px;
+	margin-top: 20px;
+	float: left;
+	border-right: 2px solid #003333;
+	border-left: 1px solid #003333;
+	color: #000000;
+}
+
+
+
+#maincontent h2
+{
+	color: #000000;
+	background: #009999;
+	border-bottom: 1px solid #003333;
+	padding: 5px 10px;
+	font-family: 'Vollkorn', serif;
+	letter-spacing: auto;
+
+}
+
+#introduction img
+{
+	width: 150px;
+	height: 164px;
+	margin: 5px 10px;
+	padding: 2px;
+	float: left;
+	border: 2px solid black;
+}
+
+#education
+{
+	font-family: 'Roboto', sans-serif;
+	padding: 5px 10px;
+}
+
+h5
+{
+	font-weight: lighter;
+	margin-left: 20px;
+	
+}
+
+#skill
+{
+	font-weight: bold;
+
+}
+
+#skill img
+{
+	width: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+#skill .skill-container
+{
+	width: 90%;
+	height: 15px;
+	border:1px solid #000000;
+	border-radius: 0 5px 5px 0;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	color: #000000;
+}
+
+#skill .python
+{
+	width: 40%;
+	height: 15px;
+	background-color: #004d66;
+	text-align: right;
+}
+
+#skill .html
+{
+	width: 60%;
+	height: 15px;
+	background-color: #ff6600;
+	text-align: right;
+}
+
+#skill .css
+{
+	width: 40%;
+	height: 15px;
+	background-color: #0099cc;
+	text-align: right;
+}
+
+#skill .c
+{
+	width: 90%;
+	height: 15px;
+	background-color: #99e600;
+	text-align: right;
+}
+
+#skill .cpp
+{
+	width: 70%;
+	height: 15px;
+	background-color: #993d00;
+	text-align: right;
+}
+
+#skill .java
+{
+	width: 0%;
+	height: 15px;
+	background-color: #006080;
+	text-align: right;
+}
+
+#skill .javascript
+{
+	width: 0%;
+	height: 15px;
+	background-color: #00b33c;
+	text-align: right;
+}
+
+#skill .ps
+{
+	width: 20%;
+	height: 15px;
+	background-color: #002533;
+	text-align: right;
+}
+
+.nivo-caption
+{
+	bottom: 20px;
+	font-size: 18px;
+}
+
+
+#maincontent p
+{
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 22px;
+}
+
+#maincontent p a
+{
+	text-decoration: none;
+	color: #009999;
+}
+
+#maincontent p a:hover
+{
+	color: #003333;
+}
+
+#gellary
+{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#comment_box
+{
+	margin-top: 10px;
+}
+#comment_box form
+{
+
+	padding: 15px; 
+	font-family: 'Roboto', sans-serif;
+	width: 400px;
+
+
+}
+.username
+{
+	width: 100%;
+	background: none;
+	padding: 5px 0px;
+	overflow: hidden;
+	border-bottom: 2px solid #003333;
+
+}
+
+.username img
+{
+	float: left;
+	width: 25px;
+}
+
+.username input
+{
+
+	width: 80%;
+	margin-left: 10px;
+	border: none;
+	background: none;
+	outline: none;
+	overflow: hidden;
+	float: left;
+	font-size: 18px;
+	margin: 0 10px;
+}
+
+.question textarea
+{
+
+	width: 100%;
+	height: 200px;
+	background: #003333;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	margin-top: 12px;
+	color: white;
+}
+
+#submit
+{
+	width: 100%;
+	background: none;
+	border: 1px solid #003333;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+#submit:hover
+{
+	cursor: pointer;
+	background: #003333;
+	color: #e6ffff;
+}
+
+
+#sidebar
+{
+	width: 198px;
+	float: left;
+	font-family: 'Roboto', sans-serif;
+}
+
+#sidebar h2
+{
+	font-family: 'Vollkorn', serif;
+	font-family: 'Vollkorn', serif;
+	letter-spacing: auto;
+	margin: auto;
+	margin-top: 20px;
+	background-color: #009999;
+	color: #000000;
+	padding: 5px 10px;
+	border-bottom: 1px solid #003333;
+	border-right: 1px solid #003333;
+}
+
+#sidebar p
+{
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+#sidebar p img
+{
+	width: 20px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+
+#sidebar p a
+{
+	text-decoration: none;
+	color: #000000;
+	padding: 5px;
+	display: block;
+}
+
+#sidebar p a:hover
+{
+	color: #009999;
+	border-bottom: 1px solid #003333;
+	border-right: 1px solid #003333;
+	box-shadow: 2px 2px 2px grey;
+}
+
+
+#footer
+{
+	background-color:  #001a1a;
+	color: #ffffff;
+	
+}
+
+#footer p
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+}
