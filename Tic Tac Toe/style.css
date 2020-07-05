@@ -1,0 +1,117 @@
+
+body{
+	background-color:  #d6d6c2;
+}
+
+h1{
+	font-family: cursive;
+	margin-top: 80px;
+	text-align: center;
+}
+
+p{
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 12px;
+	margin-top: -20px;
+}
+
+a{
+	text-decoration: none;
+	margin-top: 10px;
+	font-size: 15px;
+	padding: 3px;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+a:hover{
+	color: black;
+	border: 2px solid #000000;
+	background-color: #d6d6c2;
+}
+
+#wrapper
+{
+	position: absolute;
+	left: 50%;
+	margin-left: -255px;
+	top: 50%;
+	margin-top: -255px;
+	width: 500px;
+	height: 500px;
+	background-color: #4da9ff;
+	border: 2px solid #000000;
+}
+
+td{
+	border: 2px solid #333;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: monospace;
+	font-size: 70px;
+	cursor: pointer;
+}
+
+table{
+	border-collapse: collapse; 
+	position: absolute;
+	left: 50%;
+	margin-left: -155px;
+	top: 50%;
+	margin-top: -155px;
+}
+
+table tr:first-child td{
+	border-top: none;
+}
+
+table tr:last-child td{
+	border-bottom: none;
+}
+
+table tr td:first-child{
+	border-left: none;
+}
+
+table tr td:last-child{
+	border-right: none;
+}
+
+.endgame{
+	display: none;
+	width: 200px;
+	top: 50%;
+	margin-top: -70px;
+	background-color: #3d5c5c;
+	border: 1px solid #000000;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	font-size: 2em;
+}
+
+button{
+	width: 500px;
+	height: 50px;
+	background-color: #4da9ff;
+	border: none;
+	border-top: 1px solid #000000;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: monospace;
+	position: absolute;
+	top: 90%;
+}
+
+button:hover{
+	background-color:#1a90ff;
+	cursor: pointer;
+}
