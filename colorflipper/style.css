@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+body{
+	font-family: "Roboto", sans-serif;
+}
+
+nav{
+	display: grid;
+	align-items: center;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	background: white;
+}
+
+.nav-center{
+	width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-center h2 {
+  text-align: center;
+  color: hsl(205, 78%, 60%);
+}
+
+.nav-links{
+	display: flex;
+	list-style: none;
+	list-style-type: none;
+}
+
+nav a{
+	font-size: 1rem;
+	color: hsl(205, 86%, 17%);
+	font-weight: 700;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: hsl(205, 78%, 60%);
+}
+
+.color{
+	color: hsl(205, 78%, 60%);
+	text-transform: capitalize;
+}
+
+.main{
+	display: grid;
+	place-items: center;
+
+}
+
+.container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.container h2 {
+  background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2.5rem;
+}
+.btn-hero{
+	text-transform: uppercase;
+	font-family: sans-serif;
+	background: none;
+	width: 250px;
+	height: 50px;
+	border: 2px solid none;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-hero:hover {
+  color: white;
+  background: black;
+}

@@ -1,76 +1,91 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Nnafi's Blog</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/default/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/light/light.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/dark/dark.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/bar/bar.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <head>
+        <title>Nnafi's Blog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = width-device, initital-scale = 1.0">
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="img/nn.png"/>
+    </head>
+    <body>
+        <!-- header  -->
+        <header id="home">
+            <video class="video-container" muted autoplay loop>
+                <source src="vid/background.m4v" type="video/mp4">
+            </video>
+            <!-- navbar -->
+            <nav class="nav">
+                <div class="nav-center">
+                    <!-- nav header  -->
+                    <div class="nav-header">
+                        <img src="img/nn-white.png" alt="Nomaan Nafi" class="logo" id="logo">
+                        <button class="nav-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <!-- links -->
+                    <div class="links-container">
+                        <ul class="links">
+                            <li>
+                                <a href="#home" class="scroll-link">home</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="scroll-link">about</a>
+                            </li>
+                            <li>
+                                <a href="#projects" class="scroll-link">projects</a>
+                            </li>
+                            <li>
+                                <a href="#contacts" class="scroll-link">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- banner  -->
+            <div class="banner">
+                <div class="container">
+                    <h1>N.Nafi's Blog</h1>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="container">
+                    <p>
+                        Hello, good people!<br> I am Abdullah Al Nomaan Nafi and this is 
+                        my personal website.
+                    </p>
+                    <a href="#tours" class="btn-cv">
+                        download cv
+                    </a>
+                </div>
+            </div>
+        </header>
 
-	<link rel="icon" href="icons/nn.png"/>
-	<link rel="shortcut icon" href="icons/nn.ico"/>
+        <!-- about  -->
+        <section id="about" class="section">
+            <div class="title">
+                <h2>about <span>me</span></h2>
+            </div>
 
-</head>
-
-<body>
-	<div id="wrap">
-		<header>
-			<div id="header-wrapper">
-				<div id="header">
-					<a href="#"><img src="icons/nn.png"></a>
-					<h1>NNafi's Blog</h1> 
-					<p>pursue your dream</p>
-				</div>
-			</div>
-		</header>
-
-		<nav>
-			<div id="nav-wrapper">
-				<div id="nav">
-					<ul>
-						<li><a href="#header">Home</a></li>
-						<li><a href="#introduction">About Me</a></li>
-						<li><a href="#gellary">Gellary</a></li>
-						<li><a href="#">Solved problems</a>
-							<ul>
-								<li><a href="#">Codeforces</a></li>
-								<li><a href="#">Uva</a></li>
-								<li><a href="#">Project Euler</a></li>
-								<li><a href="#">Hackerrank</a></li>
-							</ul>
-						</li>
-						<li><a href="#comment_box">Ask me</a></li>
-						<li id="game">
-							<a href="Tic Tac Toe/tictactoe.html">Tap To Play</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-
-		<section>
-			<div id="cover">
-		        <img src="img/cover3.jpg"/>
-        	</div>
- 
-		</section>
-
-		<div id="content_wrapper">
-			<div id="content">
-				<div id="maincontent">
-					<article>
-
-							<h2>Introducing myself:</h2>
-
-						<div id="introduction">
-
-							<img src="img/nomaan.jpg" alt="My image">
-							
-							<p>
+            <div class="about-center section-center">
+                <article class="about">
+                    
+                    <div class="btn-container">
+                        <!-- btn-container -->
+                        <button class="tab-btn active" data-id="introduction">introduction</button>
+                        <button class="tab-btn" data-id="education">eduation</button>
+                        <button class="tab-btn" data-id="skills">skills</button>
+                    </div>
+                    
+                    <article class="about-content">
+                        <!-- single item -->
+                        <div class="content active" id="introduction">
+                            <h4>introduction</h4>
+                            <p>
 								<p>
 									Hi there! I am Abdullah Al Nomaan Nafi from Jashore, Bangldesh. Currently I am studing at Department of Information and Communication Technology in<a href="https://www.iu.ac.bd/" target="_blank"> Islamic University, Kushtia, Bangladesh.</a>
 								</p>
@@ -81,174 +96,292 @@
 									I am very much interested in machine learning. At present  I spent my most of the time in competetive programming. Though I am not really good at it but I am learning. I also love Web desiging and graphics designing. I also do phtography in my free time as it gives me the real pleasure.
 								</p>
 								 
-							</p>
-						</div>
+                            </p>
+                            <div class="image-container">
+                                <img src="img/nomaan-1.jpg" alt="">
+                                <img src="img/nomaan-2.jpg" alt="">
+                                <img src="img/nomaan-3.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- end of single item  -->
 
-								<h2>Education:</h2>
-						<div id="education">
-							
+                        <!-- single item -->
+                        <div class="content" id="education">
+                            <p>
+                                <div class="timeline">
+                                    <!-- single item start -->
+                                    <div class="timeline-block">
+                                        
+                                        <div class="timeline-content">
+                                            <span><i class="fas fa-university"></i></span>
+                                            <h5>Bachelor of Engineering</h5>
+                                            <p>Islamic University, Kushtia, Bangladesh <br> present</p>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                    <!-- single item start -->
+                                    <div class="timeline-block">
+                                        
+                                        <div class="timeline-content">
+                                            <span><i class="fas fa-university"></i></span>
+                                            <h5>Higher Secondary School Certificate</h5>
+                                            <p>Navaron College, Jashore, Bangladesh <br> 2018</p>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                    <!-- single item start -->
+                                    <div class="timeline-block">
+                                        
+                                        <div class="timeline-content">
+                                            <span><i class="fas fa-university"></i></span>
+                                            <h5>Secondary School Certificate</h5>
+                                            <p>Buruj Bagan High School, Jashore, Bangladesh <br> 2016</p>
+                                        </div>
+                                    </div>
+                                    <!-- single item end -->
+                                </div>
+                            </p>
+                        </div>
+                        <!-- end of single item  -->
 
-							<p>
-								<h3>&#9864; Secondary School Certificate</h3>
-								<h5>Buruj Bagan High School, Sharsha, Jashore<br>
-								2016</h5>
-							</p>
-							<P>
-								<h3>&#9864; Higher Secondary School Certificate</h3>
-								 <h5>Navaron College, Sharsha, Jashore<br>
-								2018</h5>
-							</P>
-							<p>
-								<h3>&#9864; Bachelor of Engineering (on going)</h3>
-								<h5>Information and Communication Technology, Islamic University</h5>
-							</p>
-							
-						</div>
+                        <!-- single item -->
+                        <div class="content" id="skills">
+                            <h4>skills</h4>
+                            
+                            <div class="skill-area">
+                                <!-- single item start  -->
+                                <div class="skill">
+                                    <div class="skill-title">html</div>
+                                    <div class="skill-bar">
+                                        <div class="html skill-fill">
+                                            <span class="skill-percent">70%</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <!-- single item end  -->
+                                <!-- single item start  -->
+                                <div class="skill">
+                                    <div class="skill-title">css</div>
+                                    <div class="skill-bar">
+                                        <div class="css skill-fill">
+                                            <span class="skill-percent">60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end  -->
+                                <!-- single item start  -->
+                                <div class="skill">
+                                    <div class="skill-title">javaScript</div>
+                                    <div class="skill-bar">
+                                    <div class="javaScript skill-fill">
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- single item end  -->
+                                <!-- single item start  -->
+                                <div class="skill">
+                                    <div class="skill-title">java</div>
+                                    <div class="skill-bar">
+                                        <div class="java skill-fill">
+                                            <span class="skill-percent">65%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end  -->
+                                <!-- single item start  -->
+                                <div class="skill">
+                                    <div class="skill-title">python</div>
+                                    <div class="skill-bar">
+                                        <div class="python skill-fill">
+                                            <span class="skill-percent">60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end  -->
+                                <!-- single item start  -->
+                                <div class="skill">
+                                    <div class="skill-title">angular</div>
+                                    <div class="skill-bar">
+                                        <div class="angular skill-fill">
+                                            <span class="skill-percent">10%</span>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <!-- single item end  -->
+                                <!-- single item start  -->
+                                <div class="skill">
+                                    <div class="skill-title">c++</div>
+                                    <div class="skill-bar">
+                                        <div class="cpp skill-fill">
+                                            <span class="skill-percent">85%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end  -->
+                                <!-- single item start  -->
+                                <div class="skill">
+                                    <div class="skill-title">adobe photoshop</div>
+                                    <div class="skill-bar">
+                                        <div class="adobe skill-fill">
+                                            <span class="skill-percent">60%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single item end  -->
+                            </div>
+                        </div>
+                        <!-- end of single item  -->
+                    </article>
+                </article>
+            </div>
 
-						<div id="skill">
-							<h2>Skills</h2>
+        </section>
 
-							<img src="icons/python.png">
-							<p>Python</p>
-							<div class="skill-container">
-								<div class="python">40%</div>
-							</div>
+        <!-- projects  -->
+        <section id="projects" class="section">
+            <div class="title">
+                <h2>my <span>projects</span></h2>
+            </div>
 
-							<img src="icons/html.png">
-							<p>Html</p>
-							<div class="skill-container">
-								<div class="html">60%</div>
-							</div>
+            <div class="project-center section-center">
+                <article class="projects">
+                    <div class="row">
+                        <!-- single item start  -->
+                        <div class="card">
+                            <div class="card-image">
+                               <img src="img/Pentatonic Piano.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4>pentatonic piano</h4>
+                                <p>
+                                    It is an arduino based project. A piezo buzzer has used in it.
+                                </p>
+                                <a href="https://www.tinkercad.com/things/7J8qElQGepp-pentatonic-piano" class="btn" target="_blank">view</a>
+                            </div>
+                        </div>
+                        <!-- single item end -->
+                        <!-- single item start  -->
+                        <div class="card">
+                            <div class="card-image">
+                               <img src="img/tictactoe.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4>tic tac toe</h4>
+                                <p>
+                                    This game is implemented by min-max algorithm and designed with javascript.
+                                </p>
+                                <a href="tictactoe/tictactoe.html" class="btn" target="_blank">view</a>
+                            </div>
+                        </div>
+                        <!-- single item end -->
+                        <!-- single item start  -->
+                        <div class="card">
+                            <div class="card-image">
+                               <img src="img/colorflipper.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4>color flipper</h4>
+                                <p>
+                                    This is a simple project which just change the background color on your click.
+                                </p>
+                                <a href="colorflipper/index.html" class="btn" target="_blank">view</a>
+                            </div>
+                        </div>
+                        <!-- single item end -->
+                        <!-- single item start  -->
+                        <div class="card">
+                            <div class="card-image">
+                               <img src="img/LDR.png" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4>automated bulb</h4>
+                                <p>
+                                     This will automate the bulb to ligh-up in dark places.
+                                </p>
+                                <a href="https://www.tinkercad.com/things/3foxR5JMenL-ldr-" class="btn" target="_blank">view</a>
+                            </div>
+                        </div>
+                        <!-- single item end -->
 
-							<img src="icons/css.png">
-							<p>Css</p>
-							<div class="skill-container">
-								<div class="css">40%</div>
-							</div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-							<img src="icons/c.png">
-							<p>C</p>
-							<div class="skill-container">
-								<div class="c">90%</div>
-							</div>
+        <!-- contact  -->
+        <section id="contacts" class="section">
+            <div class="title">
+                <h2>contact <span>me</span></h2>
+                <div class="contact-center section-center">
+                        <div class="contact-container">
+                          <div class="address-container">
+                            <i class="fa fa-home" style="width:30px"></i> Jashore, Bangladesh<br>
+                            <i class="fa fa-map-marker" style="width:30px"></i> Kushtia, Bangladesh<br>
+                            <i class="fa fa-phone" style="width:30px"></i> Phone: +8801783562289<br>
+                            <i class="fa fa-envelope" style="width:30px"> </i> Email: Nomaannafi99@gmail.com<br>
+                          </div>
+                          <div class="form-container">
+                            <form action="/action_page.php" target="_blank">
+                              <div class="form">
+                                <div class="name-container">
+                                  <input class="name" type="text" placeholder="Name" required name="Name">
+                                </div>
+                                <div class="email-container">
+                                  <input class="email" type="text" placeholder="Email" required name="Email">
+                                </div>
+                              </div>
+                              <textarea class="message"></textarea><br>
+                              <button class="btn btn-submit" type="submit">SEND</button>
+                            </form>
+                          </div>
+                        </div>
+                </div>
+            </div>
+        </section>
 
-							<img src="icons/c++.png">
-							<p>C++</p>
-							<div class="skill-container">
-								<div class="cpp">70%</div>
-							</div>
+        <!-- footer  -->
+        <footer class="section">
+            <ul class="social-icons">
+						<li>
+							<a href="https://www.facebook.com/nomaan.nafi.1" target="_blank">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/n.nafi1211/" target="_blank">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/abdullah-al-nomaan-nafi-7317a7190/" target="_blank">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/Nnafi1211" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+						</li>
+					</ul>
+           <p>
+                copyright &copy;Abdullah Al Nomaan Nafi <span id="date">2020</span>. all rights reserved
+           </p>
+        </footer>
 
-							<img src="icons/java.png">
-							<p>Java</p>
-							<div class="skill-container">
-								<div class="java">0%</div>
-							</div>
+        <!-- back to top button  -->
+        <a href="#home" class="scroll-link top-link">
+            <i class="fas fa-arrow-up"></i>
+        </a>
 
-							<img src="icons/js.png">
-							<p>Javascript</p>
-							<div class="skill-container">
-								<div class="javascript">0%</div>
-							</div>
-
-							<img src="icons/ps.png">
-							<p>Adobe Photoshop CC</p>
-							<div class="skill-container">
-								<div class="ps">20%</div>
-							</div>
-
-						</div>
-
-						<div id="gellary">
-							<h2>Gellary:</h2>
-							
-							<div id="slider1-wrapper">
-								<div class="slider1-wrapper theme-dark">
-						            <div id="slider1" class="nivoSlider">
-						                <img src="img/batchday.jpg" title="Batch Day" />
-						                <img src="img/tarunno.jpg" title="Tarunno" />
-						                <img src="img/ieeeday.jpg" title="IEEE Day" />
-						                <img src="img/kuakata.jpg" title="Kuakata Sea beach" />
-						                <img src="img/shibdah.jpg" title="Beside Shibdah river" />
-						                <img src="img/winter.jpg" title="A winter morning" />
-						                <img src="img/pigeon.jpg" title="Prisoned pigeon" />
-						                <img src="img/village.jpg" title="A village inside Shundarban" />
-						                <img src="img/river.jpg" title="Beside Shibdah river" />
-						                <img src="img/river1.jpg" title="Beside Gorai river" />
-						            </div>
-								</div>
-
-							</div>
-						</div>
-
-						<div id="comment_box">
-								<h2>Ask Me:</h2>
-								<form action="" method="">
-									<div class="username">
-										<img src="icons/user.png">
-										<input type="text" name="name" placeholder="Enter your name"\><br><br>
-									</div>
-
-									<div class="username">
-										<img src="icons/email.png">
-									<input type="Email" name="Email" placeholder="Enter your email"\><br><br>
-									</div>
-
-									<div class="question">
-									<textarea>Write Your Comment Here:</textarea><br><br>
-									</div>
-
-									<input id="submit" type="submit" value="Submit"\>
-				
-								</form>
-						</div>
-
-					</article>
-				</div>
-
-				<div id="sidebar">
-					<aside>
-						<h2>Contact On:</h2>
-						<p><img src="icons/facebook.png"><a href="https://www.facebook.com/nomaan.nafi.1" target="_blank">Facebook</a></p>
-						<p><img src="icons/linkedin.png"><a href="https://www.linkedin.com/in/abdullah-al-nomaan-nafi-7317a7190/" target="_blank">Linked in</a></p>
-						<p><img src="icons/instagram.png"><a href="https://www.instagram.com/n.nafi1211/" target="_blank">Instagram</a></p>
-						<p><img src="icons/github.png"><a href="https://github.com/Nnafi1211/pikopie" target="_blank">GitHub</a></p>
-					</aside>
-				</div>
-			</div>
-
-		</div>
-
-		<footer>
-			<div id="footer">
-				<p>&copy; All Right Reserved By - Nomaan || E-mail: Nomaannafi99@gmail.com</p>
-			</div>
-		</footer>
-
-	</div>
-
-	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
-    <script type="text/javascript">
-   
-    $(window).load(function() {
-        $('#slider1').nivoSlider();
-    });
-    </script>
-
-	<script type="text/javascript">
-			$(document).ready(function() {
-				var s = $("#nav-wrapper");
-				var pos = s.position();					   
-				$(window).scroll(function() {
-					var windowpos = $(window).scrollTop();
-					if (windowpos >= pos.top) {
-						s.addClass("stick");
-					} else {
-						s.removeClass("stick");	
-					}
-				});
-			});
-	</script> 
-
-</body>
+        <!-- JavaScript files -->
+        <script src="app.js"></script>
+    </body>
 </html>
